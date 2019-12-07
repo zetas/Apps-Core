@@ -72,7 +72,7 @@
       docker_container:
         name: '{{pgrole}}'
         image: '{{image}}'
-        pull: yes
+        pull: no
         published_ports:
           - '{{ports.stdout}}{{extport}}:{{intport}}'
           - '{{extport2}}:{{intport2}}'
@@ -297,3 +297,4 @@
       docker_container:
         name: '{{pgrole}}'
         state: started
+
